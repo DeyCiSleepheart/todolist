@@ -175,16 +175,23 @@ ul.todo li .buttons button.remove:hover svg .fill {
 ul.todo li .buttons button.complete svg .fill {
   fill:#999;
 }
+ul.todo li .buttons button.complete:hover svg .fill, ul.todo li .buttons button.complete:hover svg{
+  fill:#f0f;
+  border:1.5px solid #f0f;
+}
 ul.todo li .buttons button.complete svg {
   border-radius:11px;
   border:1.5px solid #999;
 }
+
 ul.todo#completed li .buttons button.complete:hover svg {
   background: #f0f;
   border:0;
 }
 ul.todo:not(#completed) li .buttons button.complete  {
-  background: #0f0;
+  background: #777;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 ul.todo#completed li .buttons button.complete svg .fill {
