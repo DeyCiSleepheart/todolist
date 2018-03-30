@@ -197,13 +197,13 @@ ul.todo:not(#completed) li .buttons button.complete  {
 ul.todo#completed li .buttons button.complete svg .fill {
   fill:#fff;
 }
-
-ul.todo#completed:not(:empty) {
+/* :not(:empty)  */
+ul.todo#completed {
   position: relative;
   padding: 60px 0 0 0;
 }
-
-ul.todo#completed:not(:empty):before {
+/* :not(:empty) */
+ul.todo#completed:before {
   content:'';
   width: 150px;
   height: 1px;
